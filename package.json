@@ -1,0 +1,27 @@
+{
+  "name": "dude-kit",
+  "version": "1.0.0",
+  "description": "Automating the Distributed Universal Data Ecosystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/data-yaml/dude-kit.git"
+  },
+  "keywords": [
+    "automation",
+    "node",
+    "cdk",
+    "aws",
+    "dude",
+    "quilt"
+  ],
+  "author": "Ernest Prabhakar",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/data-yaml/dude-kit/issues"
+  },
+  "homepage": "https://github.com/data-yaml/dude-kit#readme"
+}
