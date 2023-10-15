@@ -6,7 +6,7 @@ USERNAME=${1:-nextflow-hackathon}
 
 # Set AWS profile and region
 
-AWS_PROFILE=hackathon
+AWS_PROFILE=sales
 AWS_REGION=us-west-2
 AWS="aws --profile $AWS_PROFILE --region $AWS_REGION"
 BUCKET=s3://nextflow-hackathon
