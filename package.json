@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/data-yaml/dude-kit/issues"
   },
-  "homepage": "https://github.com/data-yaml/dude-kit#readme"
+  "homepage": "https://github.com/data-yaml/dude-kit#readme",
+  "dependencies": {
+    "aws-cdk": "^2.100.0"
+  }
 }
