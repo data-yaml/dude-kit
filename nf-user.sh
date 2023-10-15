@@ -6,16 +6,16 @@ USERNAME=${1:-nextflow-hackathon}
 
 # Set AWS profile and region
 
-PROFILE=sales
-REGION=us-west-2
-AWS="aws --profile $PROFILE --region $REGION"
+AWS_PROFILE=hackathon
+AWS_REGION=us-west-2
+AWS="aws --profile $AWS_PROFILE --region $AWS_REGION"
 BUCKET=s3://nextflow-hackathon
 
 # ARNs
 
 BUCKET_POLCY=arn:aws:iam::850787717197:policy/NF-Hackathon-Bucket-Access
 GROUP_NAME=Hackathon_Users
-GROUP_ARN=arn:aws:iam::850787717197:group/Hackathon_Users
+GROUP_ARN=arn:aws:iam::850787717197:group/$GROUP_NAME
 ROLE_ARN=arn:aws:iam::850787717197:role/Hackathon-Access
 
 # List bucket
