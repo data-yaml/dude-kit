@@ -1,18 +1,12 @@
-# AWS Credentials
+# Hackathon AWS Credentials
 
-Here are your AWS credentials for accessing the `s3://nextflow-hackaton` bucket.
-Be sure to add them to `~/.aws/credentials` as, e.g.:
+Here are your [AWS credentials](https://www.nextflow.io/docs/latest/awscloud.html#aws-credentials)
+for accessing the `s3://nextflow-hackaton` bucket.
 
-```ini
-[hackathon]
-aws_access_key_id = <AccessKeyId>
-aws_secret_access_key = <SecretAccessKey>
-```
-
-Then you can test them with:
+After configuration using the above link, you can test them with:
 
 ```sh
-aws --profile hackathon --region us-west-2 s3 ls s3://nextflow-hackathon
+aws --region us-west-2 s3 ls s3://nextflow-hackathon
 ```
 
 You will also get an invite to the nf-hackathon Quilt stack.
