@@ -2,9 +2,14 @@
   "name": "dude-kit",
   "version": "1.0.0",
   "description": "Automating the Distributed Universal Data Ecosystem",
-  "main": "index.js",
+  "main": "./src/index.cjs",
+  "bin": {
+    "udc-js": "./src/index.cjs"
+  },
   "scripts": {
-    "test": "node src/index.js"
+    "lint": "eslint --fix src/*js test/*js",
+    "start": "node src/index.cjs",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -25,6 +30,16 @@
   },
   "homepage": "https://github.com/data-yaml/dude-kit#readme",
   "dependencies": {
-    "aws-cdk": "^2.100.0"
+    "aws-cdk": "^2.101.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.8",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "^20.8.6",
+    "chai": "^4.3.10",
+    "eslint": "^8.51.0",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
